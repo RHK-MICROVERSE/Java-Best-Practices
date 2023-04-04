@@ -80,7 +80,7 @@
   font-size: 22px;
 }
 
-#idiot {
+#input-user {
   border: none;
   width: 300px;
   margin: 10px;
@@ -88,7 +88,7 @@
   font-style: italic;
 }
 
-#addtodotasks {
+#addToDoTasks {
   display: flex;
   flex-direction: column;
   width: 100%;

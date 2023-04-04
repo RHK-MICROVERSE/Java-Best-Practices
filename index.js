@@ -1,11 +1,8 @@
 import addTask, { removeTask } from './modules/addAndRemove.js';
-// import './index.css';
 import DeleteAll from './modules/markCompletion.js';
-// import addTask, { removeTask } from './addAndRemove.js';
-// import DeleteAll from './markCompletion.js';
 // Creating Rendering class
-const displayContainer = document.getElementById('addtodotasks');
-const input = document.querySelector('.user-imput');
+const displayContainer = document.getElementById('addToDoTasks');
+const input = document.querySelector('.user-input');
 const tasksList = JSON.parse(localStorage.getItem('list')) || [];
 const DisplayTask = () => {
   tasksList.forEach((list, index) => {
@@ -31,7 +28,7 @@ input.addEventListener('keypress', (e) => {
 });
 
 // Creating the list of Task from the Display
-const listItemsContainer = document.querySelector('#addtodotasks');
+const listItemsContainer = document.querySelector('#addToDoTasks');
 const liLists = document.getElementsByClassName('li-list');
 listItemsContainer.addEventListener('click', (e) => {
   for (let i = 0; i < liLists.length; i += 1) {
